@@ -5,7 +5,7 @@ function solution(a, b) {
     let dayOfMonth = [31,29,31,30,31,30,31,31,30,31,30,31];
     let daySum = b-1;
 
-    for(let i=0; i<a-1; i++) {
+    for(let i=1; i<a; i++) {
         daySum += dayOfMonth[i-1];
     }
     return dayStr[daySum%7];
